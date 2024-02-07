@@ -74,8 +74,8 @@ function init() {
             writeToFile(fileName, readmeContent);
         })
         .catch((error) => {
+            // Prompt couldn't be rendered in the current environment
             if (error.isTtyError) {
-                // Prompt couldn't be rendered in the current environment
             } else {
                 // Something else went wrong
             }
